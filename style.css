@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1{
+    top: 50px;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    color: white;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+}
+
+.tesla{
+    margin: auto 0;
+    text-align: center;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border: 2px solid blue; */
+    width: 200px;
+}
+
+.tesla:hover{
+    background-image: url(logo_glow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.emptyspace{
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+#form{
+    height: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 1.2rem;
+    width: 80%;
+    /* border: 2px solid magenta; */
+    left: 10px;
+    margin: 1.5rem;
+    padding: 10px;
+}
+
+.form-heading{
+    font-size: 2rem;
+    font-weight: 520;
+}
+
+.motor{
+    color: grey;
+}
+
+.row:hover{
+    color: white;
+}
+
+.row{
+    display: flex;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.row-col1{
+    width: 60%;
+    
+}
+
+.row-col2{
+    width: 40%;
+    text-align: right;
+    padding: 0;
+}
+
+.motor div{
+
+    padding-left: 0;
+}
+
+.motor hr{
+    height: 0px;
+}
+
+.self-drive{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: grey;
+}
+
+.self-drive:hover{
+    color: white;
+}
+
+#drive{
+    margin-top: 1em;
+    color: grey;
+}
+
+#drive a{
+    color: grey;
+    text-decoration: underline;
+}
+
+.due-today{
+    margin-top: 3em;
+}
+
+#refund{
+    font-size: 0.75rem;
+    color: grey;
+    margin-top: 2em;
+}
+
+.column span{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-image: url(tesla.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.col1{
+    height: auto;
+    width: 70%;
+    /* border: 2px solid green; */
+    /* background-color: black; */
+}
+
+.col2
+{
+    display: flex;
+    justify-content: center;
+    position: realtive;
+    height: 658px;
+    width: 30%;
+    /* border: 2px solid blue; */
+    /* background: black; */
+}
+
+.image{
+    height: 460px;
+    /* border: 2px solid magenta; */
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    height: 86px;
+    /* top: 900px; */
+    /* border: 2px solid white; */
+}
+
+.col{
+    /* max-height: 88px; */
+    font-size: 1.2rem;
+    /* border: 2px solid blue; */
+    text-align: center;
+    width: 20%;
+    font-weight: 900;
+}
+
+img{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+img{
+    visibility: hidden;
+}
+
+.buynow{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    height: 40px;
+    align-items: center;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.buynow:hover{
+    background-color: white;
+    color: black;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overdiv{
+    margin-top: 250px;
+    background-color: black;
+    padding: 2rem;
+    width: 80%;
+    border: 5px solid white;
+}
+
+.col3{
+    display: none;
+    height: 100px;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+@media (max-width:1024px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+    }
+
+    .col1{
+        background-image: url(cybertruck.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+
+    .col2
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background: black;
+    }
+
+    #form{
+        width: 60%;
+    }
+
+    .form-heading p{
+        text-align: center;
+    }
+}

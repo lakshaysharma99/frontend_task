@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Design your Cybertruck | Tesla</title>
+</head>
+<body>
+    <header class="header" style="width: 100%;">
+        <nav class="navbar">
+            <div class="nav">
+                <div class="tesla"><img style="visibility: hidden;" src="logo_glow.png" alt=""></div>
+                <div  class="emptyspace"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section1" style="width: 100%;">
+        <div class="container">
+            <div class="col1">
+                <div class="image">
+                    <img src="cybertruck.png" alt="Cybertruck">
+                </div>
+                <div class="column">
+                    <div class="col">250+MI Range <span>(EPA EST.)</span> </div>
+                    <div class="col">7,500+LBS <span>TOWING CAPACITY</span></div>
+                    <div class="col">&lt 6.5S <span>0-60 MPH</span></div>
+                </div>
+
+            </div>
+            <div class="col2">
+                <div id="form">
+                    <div class="form-heading">
+                        <p>ORDER CYBERTRUCK</p>
+                    </div>
+                    <div class="motor">
+                    
+                            <div class="row">
+                                <div class="row-col1">SINGLE MOTOR RWD </div>
+                                <div class="row-col2">$39,900</div>
+                            </div>
+                            <hr>
+                 
+                    
+                            <div class="row">
+                                <div class="row-col1">DUAL MOTOR AWD </div>
+                                <div class="row-col2">$49,900</div>
+                            </div>
+                            <hr>
+                        
+                    
+                            <div class="row">
+                                <div class="row-col1">TRI MOTOR AWD </div>
+                                <div class="row-col2">$69,900</div>
+                            </div>
+                            <hr>
+                        
+                    </div>
+                    <div class="self-drive">
+                        <div style="font-size: 0.9rem;" class="row">
+                            <div class="row-col1">+ FULL SELF-DRIVING</div>
+                            <div class="row-col2">$11,400</div>
+                        </div>
+                        <hr>
+                        <div id="drive">Selecting Full-Self Driving today will secure your price as it increases in the future. <a onclick="on()">Learn more</a></div>
+                    </div>
+                    <div class="due-today">
+                        <div class="row">
+                            <div class="row-col1">
+                                DUE TODAY
+                            </div>
+                            <div class="row-col2">
+                                $200
+                            </div>
+                        </div>
+                        <div id="refund">Fully refundable. You will be able to complete your configuration as production nears in late 2021. Single Motor RWD production is expected to begin in late 2022.
+                            <p>Specs displayed are US values</p>
+                        </div>
+                    </div>
+                    <a onclick="form()"><div class="buynow">
+                        <div class="button1" role="button">BUY NOW</div>
+                    </div>
+                    </a>
+                    <div id="overlay" onclick="off()">
+                        <div class="overlay-data">
+                            <div id="overdiv">The currently enabled features require active driver supervision and do not make the vehicle autonomous. The activation and use of these features are dependent on achieving reliability far in excess of human drivers as demonstrated by billions of miles of experience, as well as regulatory approval, which may take longer in some jurisdictions. As these self-driving features evolve, your car will be continuously upgraded through over-the-air software updates.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+    </script>
+
+    
+</body>
+</html>
